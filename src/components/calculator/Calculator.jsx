@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import './calculator.scss';
 
-// eslint-disable-next-line react/prefer-stateless-function
-class Calculator extends Component {
+class Calculator extends PureComponent {
   render() {
     return (
       <section className="calculator-container">
@@ -12,11 +11,11 @@ class Calculator extends Component {
             <div className="btn clickable-btn">AC</div>
             <div className="btn clickable-btn">+/-</div>
             <div className="btn clickable-btn">%</div>
-            <div className="btn orange-btn">+</div>
+            <div className="btn orange-btn">÷</div>
             <div className="btn">7</div>
             <div className="btn">8</div>
             <div className="btn">9</div>
-            <div className="btn orange-btn">X</div>
+            <div className="btn orange-btn">*</div>
             <div className="btn">4</div>
             <div className="btn">5</div>
             <div className="btn">6</div>
@@ -27,7 +26,7 @@ class Calculator extends Component {
             <div className="btn orange-btn">+</div>
             <div className="btn zero">0</div>
             <div className="btn">.</div>
-            <div className="btn orange-btn">=</div>
+            <div className="btn orange-btn"> = </div>
           </div>
         </div>
       </section>
