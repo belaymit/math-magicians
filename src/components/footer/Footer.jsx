@@ -42,7 +42,7 @@ const Footer = () => (
       <article className="useful-links">
         <h4>Useful Links</h4>
         <Link to="/home">Home</Link>
-        <Link to="/calculations">Calculations</Link>
+        <Link to="/calculations">Calculator</Link>
         <Link to="/quotes">Quotes</Link>
       </article>
       <article className="useful-links">
