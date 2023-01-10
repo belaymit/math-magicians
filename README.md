@@ -104,6 +104,8 @@ After you're finished please remove all the comments and instructions!
 
 
 - **Navigation**
+- **Calculator**
+- **Footer**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -158,7 +160,7 @@ Install this project with:
 
 ```sh
   cd math-magicians
-  gem install
+  npm install
 ```
 
 ### Usage
@@ -215,7 +217,6 @@ You can deploy this project using:
 
 
 - [ ] **Home Page**
-- [ ] **Calculation**
 - [ ] **Quotes**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -252,15 +253,14 @@ I would like to thank Microverse community
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **What are the core requirements to do this project?**
 
-  - [Answer_1]
+  - having a knowledge of ES6 and basic understanding of ReactJS.
 
-- **[Question_2]**
+- **What is the expected outcome of the project?**
 
-  - [Answer_2]
+  - learn abut ReactJS, React components, React hooks, more on ES6, webpack and etc.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
