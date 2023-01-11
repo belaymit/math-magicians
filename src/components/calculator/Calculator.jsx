@@ -6,9 +6,9 @@ import './calculator.scss';
 
 const Calculator = () => {
   const [state, setState] = useState({
-    totalValue: 0,
+    total: 0,
     next: null,
-    operator: null,
+    operation: null,
   });
 
   const handleClick = (e) => {
@@ -16,8 +16,8 @@ const Calculator = () => {
     setState(calculate(state, value));
   };
 
-  const { totalValue, next, operator } = state;
-  const output = (totalValue || '') + (operator || '') + (next || '') || 0;
+  const { total, next, operation } = state;
+  const output = (total || '') + (operation || '') + (next || '') || 0;
 
   return (
     <section className="calculator-section">
