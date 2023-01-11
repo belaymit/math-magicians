@@ -63,8 +63,9 @@ After you're finished please remove all the comments and instructions!
 # 📖 math-magicians <a name="about-project"></a>
 
 
-**math-magicians** is a project I created using ReactJS. From this project I anticipate to learn:
+**math-magicians** is a project I created using ReactJS. From this project I learned:
 > React 18 and best practices
+> props and states
 > React Router 
 > React Icons 
 > Re-Usable Components
@@ -129,7 +130,7 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 > Basic understanding of the following:
-> HTM5/CSS3
+> HTM5/CSS3, SASS
 > ES6
 > webpack
 > JSX
