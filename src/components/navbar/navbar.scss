@@ -68,7 +68,7 @@ nav {
       li {
         a {
           color: $color-primary;
-          text-decoration: none;
+          text-decoration: underline;
           transition: $transition;
 
           &:hover {

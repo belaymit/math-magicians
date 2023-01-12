@@ -1,4 +1,22 @@
 .quotes-container {
   margin-top: 5rem;
-  height: calc(100vh - 5rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .quotes {
+    width: 50%;
+    margin: 8rem 0;
+    padding: 1rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+
+    span {
+      font-style: italic;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
 }
