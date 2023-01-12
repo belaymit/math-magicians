@@ -18,9 +18,11 @@ const Calculator = () => {
 
   const { total, next, operation } = state;
   const output = (total || '') + (operation || '') + (next || '') || 0;
+  const text = 'Let\'s do Some Math!';
 
   return (
     <section className="calculator-section">
+      <h4 className="title">{text}</h4>
       <div className="calculator-container">
         <DisplayItems output={output} />
         <ButtonsNumbers handleClick={handleClick} />
