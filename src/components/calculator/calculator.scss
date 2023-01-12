@@ -6,6 +6,7 @@ $light-orange-clr: #e59866;
 $color-primary: #3498db;
 $orange-clr: #ff7800;
 $light-orange: #dc7633;
+$operator-clr: #ee8434;
 $black: #130f40;
 $color-black:#222;
 $light-clr: #666;
@@ -16,7 +17,7 @@ $border: 0.2rem solid rgba(0, 0, 0, 0.1);
 $outline: 0.1rem solid rgba(0, 0, 0, 0.1);
 $outline-hover: 0.2rem solid var(--black);
 
-.calculator-container {
+.calculator-section {
   margin: 8rem 0 6rem;
   border-radius: 1rem;
   display: flex;
@@ -24,48 +25,63 @@ $outline-hover: 0.2rem solid var(--black);
   justify-content: center;
   padding: 1rem;
 
-  .wrapper {
-    width: 40%;
-    background: transparent;
-    display: flex;
-    flex-direction: column;
+  .calculator-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.125rem;
+    width: 50%;
+    background-color: $color-white;
+    padding: 0.125rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    margin: auto;
 
-    .display-screen {
-      background: rgb(129, 127, 127);
-      height: 4rem;
-      margin: 1rem 1rem 0 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      padding-right: 0.125rem;
-      font-size: 1.25rem;
-      color: #fff;
+    button {
+      border: none;
+      padding: 1.25rem 0;
+      font-size: 1.75rem;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
-    .button-number {
-      margin: 0 1rem;
-      margin-bottom: 1rem;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
+    .operator {
+      background-color: $operator-clr;
+      text-align: center;
+      padding-right: 0.18rem;
 
-      .btn {
-        padding: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #c2c5c9;
-        color: rgb(95, 93, 93);
-        font-size: 1.25rem;
-        border: 0.1px solid rgb(182, 180, 180);
+      &:focus {
+        background-color: $orange-clr;
+      }
+    }
 
-        &.orange-btn {
-          background: rgba(216, 142, 5, 0.938);
-          color: $color-black;
-        }
+    .btn {
+      background-color: #e0e0dad5;
+      text-align: center;
 
-        &.zero {
-          grid-column: span 2;
-        }
+      &:focus {
+        background-color: #ced1d6;
+      }
+    }
+
+    .btn-zero {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      background-color: #e2e2dc;
+      text-align: center;
+    }
+
+    .output-screen {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      text-align: right;
+      background-color: #7b7c7e;
+      color: #fff;
+      padding: 1rem 0;
+
+      .output {
+        font-size: 2rem;
       }
     }
   }

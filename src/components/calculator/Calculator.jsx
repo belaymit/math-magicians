@@ -1,37 +1,32 @@
-import React, { PureComponent } from 'react';
+import React, { useState } from 'react';
+import calculate from '../../logic/calculate';
+import ButtonsNumbers from '../buttonsNumbers/ButtonsNumbers';
+import DisplayItems from '../displayItems/DisplayItems';
 import './calculator.scss';
 
-class Calculator extends PureComponent {
-  render() {
-    return (
-      <section className="calculator-container">
-        <div className="wrapper">
-          <div className="display-screen">0</div>
-          <div className="button-number">
-            <div className="btn clickable-btn">AC</div>
-            <div className="btn clickable-btn">+/-</div>
-            <div className="btn clickable-btn">%</div>
-            <div className="btn orange-btn">÷</div>
-            <div className="btn">7</div>
-            <div className="btn">8</div>
-            <div className="btn">9</div>
-            <div className="btn orange-btn">*</div>
-            <div className="btn">4</div>
-            <div className="btn">5</div>
-            <div className="btn">6</div>
-            <div className="btn orange-btn">-</div>
-            <div className="btn">1</div>
-            <div className="btn">2</div>
-            <div className="btn">3</div>
-            <div className="btn orange-btn">+</div>
-            <div className="btn zero">0</div>
-            <div className="btn">.</div>
-            <div className="btn orange-btn"> = </div>
-          </div>
-        </div>
-      </section>
-    );
-  }
-}
+const Calculator = () => {
+  const [state, setState] = useState({
+    total: 0,
+    next: null,
+    operation: null,
+  });
+
+  const handleClick = (e) => {
+    const value = e.target.textContent;
+    setState(calculate(state, value));
+  };
+
+  const { total, next, operation } = state;
+  const output = (total || '') + (operation || '') + (next || '') || 0;
+
+  return (
+    <section className="calculator-section">
+      <div className="calculator-container">
+        <DisplayItems output={output} />
+        <ButtonsNumbers handleClick={handleClick} />
+      </div>
+    </section>
+  );
+};
 
 export default Calculator;
