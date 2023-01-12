@@ -18,23 +18,27 @@ $outline: 0.1rem solid rgba(0, 0, 0, 0.1);
 $outline-hover: 0.2rem solid var(--black);
 
 .calculator-section {
-  margin: 8rem 0 6rem;
-  border-radius: 1rem;
+  margin: 8rem 10rem 2rem 10rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 1rem;
+  gap: 2rem;
+
+  .title {
+    margin-left: 2rem;
+    font-size: 3.5rem;
+  }
 
   .calculator-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.125rem;
-    width: 50%;
+    width: 40%;
     background-color: $color-white;
     padding: 0.125rem;
     border-radius: 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    margin: auto;
+    margin-right: 2rem;
 
     button {
       border: none;
