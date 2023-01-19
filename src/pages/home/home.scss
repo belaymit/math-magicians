@@ -1,0 +1,31 @@
+@import '../../common/common-css-rules.scss';
+
+.home-container {
+  margin-top: 5rem;
+
+  .container {
+    .header-title {
+      font-weight: bold;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .text-desc {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    @include sm {
+      margin: 8rem 1rem;
+      padding: 1rem;
+    }
+
+    @include md {
+      margin: 8rem 2.5rem;
+    }
+
+    @include lg {
+      margin: 8rem 10rem 4rem 10rem;
+    }
+  }
+}

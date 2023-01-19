@@ -1,0 +1,36 @@
+@import '../../common/common-css-rules.scss';
+
+.quotes-container {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .quotes {
+    margin: 8rem 0;
+    padding: 1rem;
+
+    @include sm {
+      width: 100%;
+      padding: 0 2rem;
+    }
+
+    @include md {
+      width: 90%;
+    }
+
+    @include lg {
+      width: 50%;
+    }
+  }
+
+  p {
+    font-size: 1.3rem;
+
+    span {
+      font-style: italic;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
+}

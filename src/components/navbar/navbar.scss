@@ -1,0 +1,82 @@
+@import '../../common/common-css-rules.scss';
+
+nav {
+  width: 100vw;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  background: whitesmoke;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+
+  .nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      text-decoration: none;
+
+      h2 {
+        font-size: 1.9rem;
+        background: -webkit-linear-gradient($dark-red, $semi-purple);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @include sm {
+          font-size: 1rem;
+          display: none;
+        }
+      }
+
+      span {
+        color: $color-indigo;
+        font-size: 2rem;
+        margin-bottom: -0.5rem;
+      }
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 3rem;
+      list-style: none;
+      font-size: 1.2rem;
+
+      li {
+        a {
+          color: $color-primary;
+          text-decoration: underline;
+          transition: $transition;
+
+          &:hover {
+            color: $dark-orange;
+          }
+        }
+      }
+    }
+
+    @include sm {
+      margin: 0;
+      padding: 0 1rem;
+    }
+
+    @include md {
+      margin: 0;
+      padding: 1rem 2rem;
+    }
+
+    @include lg {
+      margin: 0 6rem;
+      padding: 1rem;
+    }
+  }
+}
