@@ -15,8 +15,6 @@ const Footer = () => (
         </Link>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Eum perferendis et laborum error dolorem dolore architecto
-          cumque, rem corrupti quis!
         </p>
         <div className="footer-socials">
           <a href="https://www.linkedin.com/in/belay-birhanu-144ba714b/" target="_blank" rel="noreferrer noopener">
