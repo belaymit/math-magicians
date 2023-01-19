@@ -6,7 +6,7 @@ import './navbar.scss';
 const Navbar = () => (
   <nav>
     <div className="nav-container">
-      <a href="index.html" className="nav-logo">
+      <a href="/" className="nav-logo">
         <h2>Math Magician</h2>
         <span><TbMathFunction className="icon" /></span>
       </a>
