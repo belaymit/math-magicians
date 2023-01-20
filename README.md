@@ -2,10 +2,9 @@
 
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="src/assests/murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="src/assests/maic_calc.jpg" alt="magic calculator logo" width="400" height="200"/>
+  <h1>Magic Calculator</h1>
   <br/>
-
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -159,9 +158,10 @@ To run tests, run the following command:
 You can deploy this project using:
 
 
-> [GitHub pages](https://github.com/belaymit/math-magicians/settings/pages) 
-> [netlify](https://www.netlify.com/)
->[000webhost.com](https://www.000webhost.com/)
+- [GitHub pages](https://github.com/belaymit/math-magicians/settings/pages) 
+- [netlify](https://www.netlify.com/)
+- [000webhost.com](https://www.000webhost.com/)
+- [Render](https://render.com/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
