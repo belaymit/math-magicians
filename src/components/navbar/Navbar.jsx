@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { TbMathFunction } from 'react-icons/tb';
 import menuList from './menuList';
 import './navbar.scss';
@@ -13,7 +14,7 @@ const Navbar = () => (
       <ul className="nav-menu">
         {menuList.map((item) => (
           <li key={item.id}>
-            <a href={item.link}>{item.title}</a>
+            <Link to={item.link}>{item.title}</Link>
           </li>
         ))}
       </ul>
